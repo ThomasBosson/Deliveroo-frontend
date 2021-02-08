@@ -1,1 +1,124 @@
 /* Other rules */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 1250px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+.header {
+  border-bottom: 1px solid #e8ebeb;
+}
+
+.header img {
+  height: 50px;
+}
+
+/* SECTION RESTAURANT */
+
+.section-1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+  margin-bottom: 5px;
+  background-color: white;
+}
+
+.col-1 h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #2e3333;
+}
+
+.col-1 p {
+  color: #868a8a;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.col-2 img {
+  width: 350px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  margin-left: 30px;
+}
+
+/* SECTION MENU */
+
+.section-2 {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f2f5f5;
+}
+
+.menu {
+  width: 68%;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-title h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.menu-offer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.meal {
+  box-sizing: border-box;
+  width: 410px;
+  height: 160px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 60px;
+  border-radius: 5px;
+}
+
+.meal-desc {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.meal-desc h3 {
+  font-size: 18px;
+}
+
+.meal-desc p {
+  font-size: 13px;
+  height: 40px;
+  overflow: hidden;
+  line-height: 22px;
+}
+
+.meal-pic img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.meal:hover {
+  cursor: pointer;
+  transition-duration: 0.3s;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  transform: scale(1.1);
+}
