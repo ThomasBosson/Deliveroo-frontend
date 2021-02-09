@@ -1,3 +1,7 @@
+// Récupérer les données du restaurant - Partie Hero de la page
+// 1ère colonne : h1 + p
+// 2ème colonne : img
+
 const Restaurant = ({ data }) => {
   return (
     <>
