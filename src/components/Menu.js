@@ -3,7 +3,7 @@ import Meal from "./Meal";
 const Menu = ({ data, cart, setCart }) => {
   return (
     <>
-      <div className="menu-title">
+      <div className="menu-box">
         {data.meals.length ? (
           <>
             {/* On récupère les name du tableau "catégorie" grâce au .map dans App.js */}

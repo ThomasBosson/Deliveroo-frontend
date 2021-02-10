@@ -6,16 +6,16 @@ const Meal = ({ data, cart, setCart }) => {
     <div
       className="meal"
       onClick={() => {
-        // On trouve l'item s'il existe et on renvoit son index
-        const itemIndex = cart.findIndex((e) => e.id === data.id);
-        // Si différent -1 donc s'il existe déjà
-        if (itemIndex !== -1) {
-          let cartCopy = [...cart];
+        // Pour chaque élément tu me retournes l'id de l'élément sur lequel je clique
+        const existItem = cart.findIndex((e) => e.id === data.id);
+        // Si l'item existe déjà dans le cart
+        if (existItem !== -1) {
+          let newCart = [...cart];
           // Modification de la quantité de l'item existant
-          //  en utilisant l'index récupéré auparavant
-          cartCopy[itemIndex].counter++;
+          // en utilisant l'index récupéré auparavant
+          newCart[existItem].counter++;
           // On met en place le nouveau state
-          setCart(cartCopy);
+          setCart(newCart);
         } else {
           // Sinon on push un nouvel objet
           const newItem = {
@@ -24,13 +24,13 @@ const Meal = ({ data, cart, setCart }) => {
             price: data.price,
             counter: 1,
           };
-          let cartCopy = [...cart];
-          cartCopy.push(newItem);
-          setCart(cartCopy);
+          let newCart = [...cart];
+          newCart.push(newItem);
+          setCart(newCart);
         }
       }}
     >
-      <div className="meal-desc">
+      <div className="meal-description">
         <h3>{data.title}</h3>
         <p>{data.description}</p>
         <span>{data.price} €</span>

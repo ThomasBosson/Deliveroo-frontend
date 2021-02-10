@@ -49,8 +49,10 @@ function App() {
                 );
               })}
             </div>
+            <div className="cart-box">
+              <Cart cart={cart} setCart={setCart} data={data} />
+            </div>
           </div>
-          <Cart cart={cart} setCart={setCart} data={data} />
         </div>
       </div>
     </>

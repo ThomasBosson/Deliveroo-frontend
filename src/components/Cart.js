@@ -1,6 +1,6 @@
 import Items from "./Items";
 
-const Card = ({ cart, setCart }) => {
+const Cart = ({ cart, setCart }) => {
   let subtotal = 0;
   let delivery = 2.5;
 
@@ -34,12 +34,10 @@ const Card = ({ cart, setCart }) => {
           </div>
         </>
       ) : (
-        <div className="empty">
-          <span>Votre panier est vide</span>
-        </div>
+        <div className="empty">Votre panier est vide</div>
       )}
     </div>
   );
 };
 
-export default Card;
+export default Cart;
