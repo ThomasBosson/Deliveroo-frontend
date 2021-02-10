@@ -20,7 +20,7 @@ const Items = ({ cart, setCart }) => {
           />
         </div>
         <div className="items-name">
-          <span style={{ width: 300 }}>{e.title}</span>
+          <span>{e.title}</span>
         </div>
         <div className="items-amount">
           <span>{(e.price * e.counter).toFixed(2)} €</span>
